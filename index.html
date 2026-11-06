@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DrinkDifferentt — thoughtfully crafted matcha and refreshing drinks.">  
+  <title>DrinkDifferentt — Better Drinks, Beautifully Made</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="announcement">
+    Thoughtfully made. Beautifully refreshing.
+  </div>
+
+  <header class="navbar">
+    <a href="#" class="logo">DrinkDifferentt<span>.</span></a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#shop">Our drinks</a>
+      <a href="#story">Our story</a>
+    </nav>
+
+    <button class="cart-button" id="open-cart" aria-label="Open shopping cart">
+      Bag <span id="cart-count">0</span>
+    </button>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">A LITTLE MOMENT, MADE BETTER</p>
+
+        <h1>Find your<br>kind of <em>refreshment.</em></h1>
+
+        <p class="hero-description">
+          Thoughtfully crafted drinks for slower mornings,
+          sunny afternoons, and everything in between.
+        </p>
+
+        <a href="#shop" class="button button-dark">Explore our drinks ↗</a>
+
+        <p class="hero-note">Small rituals. Better ingredients. Good energy.</p>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1631308491952-040f80133535?q=80&w=1285&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+          alt="Freshly prepared green matcha drink"
+        >
+        <div class="image-caption">
+          <span>YOUR DAILY PAUSE</span>
+          <span>01 / MATCHA</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-section section-padding" id="shop">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MADE TO BE SAVORED</p>
+          <h2>A few of our <em>favorites.</em></h2>
+        </div>
+        <p class="section-description">
+          Three refreshing ways to make an ordinary day feel special.
+        </p>
+      </div>
+
+      <div class="product-grid">
+
+        <article class="product-card">
+          <div class="product-image matcha-image">
+            <span class="product-tag">THE SIGNATURE</span>
+            <img
+              src="https://images.unsplash.com/photo-1631308491952-040f80133535?q=80&w=1285&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+              alt="Green matcha drink"
+              loading="lazy"
+            >
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Matcha Latte</h3>
+              <p>Earthy, smooth, naturally vibrant.</p>
+            </div>
+            <span class="price">$5.00</span>
+          </div>
+          <button class="add-button" data-id="matcha">
+            Add to bag <span>+</span>
+          </button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image coconut-image">
+            <span class="product-tag">A TROPICAL FAVORITE</span>
+            <img
+              src="https://images.unsplash.com/photo-1604321114793-3dcae9e76043?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+              alt="Refreshing coconut drink"
+              loading="lazy"
+            >
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Lemon Coconut</h3>
+              <p>Bright citrus meets creamy coconut.</p>
+            </div>
+            <span class="price">$5.00</span>
+          </div>
+          <button class="add-button" data-id="coconut">
+            Add to bag <span>+</span>
+          </button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image cider-image">
+            <span class="product-tag">LIGHT & BUBBLY</span>
+            <img
+              src="https://images.unsplash.com/photo-1623318215748-cb6783ffdc2f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+              alt="Citrus sparkling drink with ice"
+              loading="lazy"
+            >
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Sparkling Cider</h3>
+              <p>Fruity, crisp, delightfully fizzy.</p>
+            </div>
+            <span class="price">$5.00</span>
+          </div>
+          <button class="add-button" data-id="cider">
+            Add to bag <span>+</span>
+          </button>
+        </article>
+
+      </div>
+      <p class="menu-note">
+        Menu and pricing shown as a starting point. Customize them for your offerings.
+      </p>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-image">
+        <img
+          src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1000&q=85"
+          alt="Tea prepared with care"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="story-copy">
+        <p class="eyebrow">A DIFFERENT KIND OF DRINK</p>
+        <h2>Good drinks.<br><em>Good moments.</em></h2>
+        <p>
+          We believe a drink can be more than something in your hand.
+          It can be a pause in your day, a moment with a friend,
+          or a small reminder to slow down and enjoy what's in front of you.
+        </p>
+        <a href="#shop" class="text-link">Find your favorite ↗</a>
+      </div>
+    </section>
+
+    <section class="values-section">
+      <div>
+        <span>01</span>
+        <h3>Made with care</h3>
+        <p>Thoughtful recipes and ingredients.</p>
+      </div>
+      <div>
+        <span>02</span>
+        <h3>Made for the moment</h3>
+        <p>Little rituals worth looking forward to.</p>
+      </div>
+      <div>
+        <span>03</span>
+        <h3>Made to share</h3>
+        <p>Good drinks are even better together.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">DrinkDifferentt<span>.</span></a>
+    <p>A little different. A little more delightful.</p>
+    <div class="footer-links">
+      <a href="#shop">Shop</a>
+      <a href="#story">Our story</a>
+      <a href="mailto:hello@zesta.com">Contact</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> DrinkDifferentt. Made with care.</p>
+  </footer>
+
+  <!-- Shopping cart panel -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <aside class="cart-panel" id="cart-panel"
+         role="dialog" aria-modal="true"
+         aria-labelledby="cart-title" aria-hidden="true">
+    <div class="cart-header">
+      <h2 id="cart-title">Your bag <span id="cart-heading-count">(0)</span></h2>
+      <button id="close-cart" class="close-button" aria-label="Close cart">×</button>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+      <p class="empty-cart">Your bag is waiting for something lovely.</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <strong id="cart-total">$0.00</strong>
+      </div>
+      <p class="checkout-note">Delivery or pickup details can be added at checkout.</p>
+      <button id="checkout-button" class="button button-dark checkout-button">
+        Continue to checkout ↗
+      </button>
+    </div>
+  </aside>
+
+</body>
+</html>
