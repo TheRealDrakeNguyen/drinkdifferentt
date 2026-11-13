@@ -202,14 +202,21 @@ h2 em {
 }
 
 .arrow-icon {
+  position: relative;
   display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-top: 1.5px solid currentColor;
-  border-right: 1.5px solid currentColor;
-  transform: rotate(45deg) translateY(-1px);
-  transform-origin: center;
+  width: 0.75em;
+  height: 0.75em;
   flex-shrink: 0;
+  transform: translateY(-1px);
+}
+
+.arrow-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
 }
 
 .button:hover {
