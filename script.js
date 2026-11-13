@@ -4,6 +4,14 @@ const products = {
     name: "Matcha Latte",
     price: 5.00
   },
+  coconutMatcha: {
+    name: "Coconut Matcha",
+    price: 5.00
+  },
+  jasmineMatchaLatte: {
+    name: "Jasmine Matcha Latte",
+    price: 6.00
+  },
   coconut: {
     name: "Lemon Coconut",
     price: 5.00
